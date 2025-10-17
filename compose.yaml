@@ -1,0 +1,8 @@
+services:
+  gohome:
+    image: lalyos/lunch:dms
+    environment:
+      - TITLE=Lalyos can go home
+      - COLOR=mediumpurple
+    ports:
+      - 8080:80
