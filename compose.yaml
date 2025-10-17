@@ -1,6 +1,8 @@
 services:
   gohome:
     image: lalyos/lunch:dms
+    build:
+      context: .
     environment:
       - TITLE=Lalyos can go home
       - COLOR=mediumpurple
