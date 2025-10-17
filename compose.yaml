@@ -1,3 +1,4 @@
+name: dms
 services:
   gohome:
     image: lalyos/lunch:dms
@@ -8,3 +9,13 @@ services:
       - COLOR=${COLOR:-gray}
     ports:
       - 80
+  mydb:
+    image: mariadb:11
+    environment:
+      - MARIADB_ROOT_PASSWORD=secret
+    volumes:
+      - vipdb:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+
+volumes:
+  vipdb:
