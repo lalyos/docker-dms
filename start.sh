@@ -10,7 +10,7 @@ cat > /var/www/html/index.html <<EOF
     ${BODY:-Please use TITLE/BODY/COLOR env vars}
 
     <hr>
-    Kopirayt 2025.
+    Kopirayt 2025. [FROM REGISTRY]
 </body>
 </html>
 EOF

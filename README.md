@@ -52,3 +52,34 @@ docker run -d \
   -e BODY='<iframe src="https://giphy.com/embed/4xG3FzauZFmUNMcTLy" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Meowingtons-cat-pizza-milton-the-4xG3FzauZFmUNMcTLy">via GIPHY</a></p>' \
   lunch:v4
 ```
+
+## Build from URL
+
+```
+docker build \
+  -t lunch:v5 https://github.com/lalyos/docker-dms.git
+
+docker run -d -p 80 lunch:v5
+```
+
+## Volumes
+
+Bind Volume
+
+```
+```
+
+Named Volume
+
+## Database
+
+
+```
+docker run -d \
+  --name mydb \
+  -v vipdb:/var/lib/mysql \
+  -v ${PWD}/sql:/docker-entrypoint-initdb.d \
+  -e MARIADB_ROOT_PASSWORD=secret  mariadb:11
+```
+
+## Compose
