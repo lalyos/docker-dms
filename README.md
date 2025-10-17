@@ -82,4 +82,6 @@ docker run -d \
   -e MARIADB_ROOT_PASSWORD=secret  mariadb:11
 ```
 
-## Compose
+## Compose - multi container app
+
+

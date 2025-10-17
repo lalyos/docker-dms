@@ -7,4 +7,4 @@ services:
       - TITLE=Lalyos can go home
       - COLOR=mediumpurple
     ports:
-      - 8080:80
+      - 80
