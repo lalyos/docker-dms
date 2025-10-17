@@ -4,7 +4,7 @@ services:
     build:
       context: .
     environment:
-      - TITLE=Lalyos can go home
-      - COLOR=mediumpurple
+      - TITLE=${TITLE:-Welcome [dev]}
+      - COLOR=${COLOR:-gray}
     ports:
       - 80
